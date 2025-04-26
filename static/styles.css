@@ -1,0 +1,203 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: url("{{ url_for('static', filename='background.webp') }}") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    background: rgba(43, 3, 57, 0.9); /* Slight transparency for better readability */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    width: 90%;
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Heading */
+h1 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1::after {
+    content: "🔍";
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+/* Textarea */
+textarea {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    margin: 10px 0;
+    padding-right: 3px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    outline: none;
+    resize: none;
+    transition: 0.3s;
+}
+
+textarea:focus {
+    border-color: #00f2fe;
+    box-shadow: 0px 0px 10px rgba(0, 242, 254, 0.6);
+}
+
+/* Button */
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(to right, #0056b3, #0091ff);
+    transform: scale(1.05);
+}
+
+/* Loading Text */
+#loading {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Result Styling */
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* Sentiment Colors */
+.positive {
+    color: #28a745;
+    background: rgba(40, 167, 69, 0.1);
+}
+
+.negative {
+    color: #dc3545;
+    background: rgba(220, 53, 69, 0.1);
+}
+
+.neutral {
+    color: #ffc107;
+    background: rgba(255, 193, 7, 0.1);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body {
+    background-image: url('background.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: white; /* Adjust text color for visibility */
+}
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    
+}
+
+
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.logo-title img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-title h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #bdbde0; /* Adjust color as needed */
+    font-family: 'Poppins', sans-serif; /* Use a modern font */
+}
+/* Navigation Bar Styling */
+nav {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #0056b3; /* Dark Blue Background */
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    color: #ffffff; /* White Text */
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Yellow on Hover */
+}
+h1 {
+    color: #5f406b; /* Deep Blue */
+    margin-bottom: 15px;
+}
+p {
+    font-size: 18px;
+    color: #a8c6dc; /* Dark Gray */
+}
+a {
+    color: #007bff; /* Bright Blue */
+    text-decoration: none;
+    font-weight: bold;
+}

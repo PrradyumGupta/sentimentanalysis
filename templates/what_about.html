@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What About - SentiMenti Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav>
+        
+        <a href="{{ url_for('policy') }}">Policy</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+        <a href="{{ url_for('what_about') }}">What About</a>
+    </nav>
+
+    <div class="container">
+        <h1>📖 What About SentiMenti Analyzer?</h1>
+        <p>SentiMenti Analyzer is a powerful sentiment analysis tool that helps users analyze the tone and emotions behind their text. Whether for social media monitoring, customer feedback, or personal projects, our AI-driven model provides accurate results.</p>
+
+        <h2>🔹 How It Works?</h2>
+        <p>Our system processes your input text and classifies the sentiment into categories like Positive, Neutral, or Negative using Natural Language Processing (NLP) and Machine Learning.</p>
+
+        <h2>🎯 Why Use SentiMenti Analyzer?</h2>
+        <ul>
+            <li>✔️ Quick and easy sentiment analysis</li>
+            <li>✔️ AI-powered accuracy</li>
+            <li>✔️ Free to use</li>
+        </ul>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
